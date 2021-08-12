@@ -1,9 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
     tools:context=".Register">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="#F8F3F3"
+            android:layout_margin="5dp"
+            android:text="Select the Symptom"/>
+        <CheckBox android:id="@+id/checkbox_fever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fever"
+           />
+        <CheckBox android:id="@+id/checkbox_cough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cough"
+            />
+        <CheckBox android:id="@+id/Upset_Stomach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upset Stomach"
+            />
+        <CheckBox android:id="@+id/checkbox_Chest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chest Pain"
+            />
+        <CheckBox android:id="@+id/checkbox_dehydaration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dehydration"
+            />
+        <CheckBox android:id="@+id/shortnessofbreath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shortness Of Breath"
+            />
+        <CheckBox android:id="@+id/pressureinchest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure in Chest"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nauesa"
+            android:id="@+id/nauesa"/>
+        <CheckBox android:id="@+id/checkbox_vomiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vomiting"
+            />
+        <CheckBox android:id="@+id/checkbox_sqeching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Squeezing"
+            />
+        <CheckBox android:id="@+id/checkbox_anxity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anxiety"
+            />
+        <CheckBox android:id="@+id/checkbox_depression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depression"
+            />
+        <CheckBox android:id="@+id/checkbox_nightmare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nightmare"
+            />
+        <CheckBox android:id="@+id/Suicidal_Thought"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suicidal Thought"
+            />
+        <CheckBox android:id="@+id/delusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delision"
+            />
+        <CheckBox android:id="@+id/muscle_pain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muscle Pain"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:onClick="onCheckboxClicked"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
