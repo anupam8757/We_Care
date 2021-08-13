@@ -79,4 +79,12 @@ public class Register extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
     }
+    public void contactUs(View view)
+    {
+        startActivity(new Intent(Register.this,ContactUs.class));
+    }
+    public void aboutUs(View view)
+    {
+        startActivity(new Intent(Register.this,AboutUs.class));
+    }
 }

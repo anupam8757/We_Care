@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeCare">
         <activity
+            android:name=".AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".ContactUs"
+            android:exported="true" />
+        <activity
             android:name=".HeartAttack"
             android:exported="true" />
         <activity

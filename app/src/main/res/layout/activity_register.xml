@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textColor="#000000"
-            android:background="#F8F3F3"
+            android:background="#EAEA50"
             android:layout_margin="5dp"
             android:text="Select the Symptom"/>
         <CheckBox android:id="@+id/checkbox_fever"
@@ -109,6 +109,22 @@
             android:layout_height="wrap_content"
             android:text="Go"
             android:onClick="onCheckboxClicked"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:onClick="contactUs"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:onClick="aboutUs"/>
+
+        </LinearLayout>
     </LinearLayout>
     </ScrollView>
 </LinearLayout>
